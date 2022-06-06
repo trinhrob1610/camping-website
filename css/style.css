@@ -1,0 +1,304 @@
+body {
+  background-color: #faf4f2;
+  margin: 0;
+}
+
+.header {
+  /* mã màu HEX: #rrggbb 0 => f */
+  background-color: #f1e1db;
+  padding: 10px 30px;
+  /* fixed: cố định trên màn hình */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* z-index: quyết dịnh độ ưu tiên
+       chỉ dùng khi có position */
+  z-index: 10;
+}
+
+.clear {
+  clear: both;
+}
+
+.header .logo {
+  /* inline ko lam dc width height margin top bottom */
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.header .logo img {
+  width: 70px;
+}
+
+.header .navbar a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.header .navbar a:hover {
+  color: red;
+}
+
+.carousel {
+  background-image: url(../img/BG.png);
+  height: 800px;
+  background-repeat: no-repeat;
+  /* background-size: x y */
+  background-size: cover;
+  /* background-position: x y; */
+  background-position: center center;
+}
+
+.activity {
+  padding: 80px 0;
+}
+
+.activity .title {
+  text-align: center;
+  color: #8d8d8d;
+}
+
+.activity .main .thumbnail img{
+  cursor: pointer;
+}
+
+.activity .main .row .col {
+  float: left;
+  width: 25%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.activity .main .item {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.activity .main .item .thumbnail {
+  position: relative;
+  /* position: absolute; */
+}
+
+.activity .main .item .thumbnail img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.activity .main .item .thumbnail i {
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  /* position: relative; */
+  top: 30px;
+  right: 30px;
+  /* background-color: rgba(red,green,blue,alpha); */
+  background-color: rgba(255, 255, 255, 0.5);
+
+  /* opacity: 0.5; */
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.activity .main .item h1 {
+  font-size: 25px;
+}
+
+.activity .main .item p {
+  color: #b3b3b3;
+  line-height: 25px;
+}
+
+.activity .main .item a {
+  text-decoration: none;
+  border: 0px solid black;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #e8e8e8;
+  display: inline-block;
+  color: #8d8d8d;
+}
+
+.activity .main button {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  color: rgb(226, 138, 116);
+  background-color: #faf4f2;
+  padding: 10px 50px;
+  border-radius: 20px;
+  border: 1px solid rgb(226, 138, 116);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact {
+  background-color: #f8e1db;
+  height: 380px;
+  border-radius: 20px;
+}
+
+.contact .row1{
+  width: 100%;
+}
+
+/* .contact .row .col{
+  float: left;
+  width: 40%;
+  box-sizing: border-box;
+} */
+
+.contact .row1 .col1 .col-left{
+  position: relative;
+  float: left;
+  width: 40%;
+}
+.contact .row1 .col1 .col-right{
+  height: 380px;
+  float: right;
+  width: 50%;
+}
+
+.contact .row1 .col1 .col-left .col-left-under img{
+  display: inline-block;
+  width: 800px;
+  height:300px
+}
+
+.contact .row1 .col1 .col-left .col-left-top img{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  margin-left: 60px;
+}
+
+.contact .row1 .col1 .col-right .col-right-left{
+  float: left;
+  width:40%;
+}
+
+.contact .row1 .col1 .col-right .col-right-left img{
+  cursor: pointer;
+}
+
+.contact .row1 .col1 .col-right .col-right-right i{
+  cursor: pointer;
+}
+
+.contact .row1 .col1 .col-right .col-right-right{
+  float: right;
+  width:60%;
+}
+
+.contact .row1 .col1 .col-right h1{
+  color: #8d8d8d;
+}
+.contact .row1 .col1 .col-right p{
+  color: #9d9a99;
+}
+
+.contact .row1 .col1 .col-right .col-right-left h3{
+  color: #919190;
+}
+
+.contact .row1 .col1 .col-right .col-right-right h3{
+  color: #919190;
+}
+
+.contact .row1 .col1 .col-right .col-right-right i{
+  color: #e76f51;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.footer{
+  background-color: #f8e1db;
+  height: 380px;
+  border-radius: 90px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.footer .row2 .col2 .col2-left{
+  float: left;
+  width: 50%;
+  height: 330px;
+}
+
+.footer .row2 .col2 .col2-right{
+  float: left;
+  width: 50%;
+  height: 330px;
+}
+
+.footer .row2 .col2 .col2-left .col2-left-left{
+  float: left;
+  width: 75%;
+  height: 330px;
+}
+
+.footer .row2 .col2 .col2-left .col2-left-right{
+  float: right;
+  width: 25%;
+  height: 330px;
+}
+
+.footer .row2 .col2 .col2-right .col2-right-left{
+  float: left;
+  width: 50%;
+  height: 330px;
+}
+
+.footer .row2 .col2 .col2-right .col2-right-left h1{
+  margin-left: 150px;
+}
+
+.footer .row2 .col2 .col2-right .col2-right-right{
+  float: left;
+  width: 50%;
+  height: 330px;
+}
+
+.footer .row2 .col2 h1{
+  font-size: 18px;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+
+.footer .row2 .col2 .col2-left p{
+  margin-left: 50px;
+}
+
+.footer .row2 .col2 .col2-right .col2-right-left p{
+  margin-left: 150px;
+}
+
+.footer .row2 .col2 .col2-right .col2-right-right p{
+  margin-left: 50px;
+}
+
+.footer .row2 .col2 p{
+  line-height: 30px;
+}
+
+.coppyright{
+  position: absolute;
+  display: block;
+  height: 50px;
+  width: 1179.2px;
+  bottom: 0px;
+  text-align: center;
+  margin-left: 180px;
+}
+
+.footer .row2 .col2 p{
+  cursor: pointer;
+  display: inline-block;
+}
+
